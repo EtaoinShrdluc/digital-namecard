@@ -1,14 +1,14 @@
 BEGIN:VCARD
 VERSION:3.0
 PRODID:-//Apple Inc.//iPhone OS 11.2.2//EN
-N:Lim;Preston;;;
-FN: Preston  Lim 
-ORG:GovTech;
-TITLE:Associate Software Engineer\nProducts Team, Data Science Division
-EMAIL;type=INTERNET;type=WORK;type=pref:preston@data.gov.sg
-TEL;type=WORK;type=VOICE:+65 9123 4567
-item1.ADR;type=WORK;type=pref:;;1 Fusionopolis View\nSandcrawler\, 09-01;;;138577;Singapore
+N:Collas;Benjamin;;;
+FN: Benjamin Collas
+ORG: Research Institute for Mathematical Sciences, Kyoto University;
+TITLE:Arithmetic Geometer\nVisiting Researcher
+EMAIL;type=INTERNET;type=WORK;type=pref:bcollas@kurims.kyoto-u.ac.jp
+TEL;type=WORK;type=VOICE:+81 80 739 37550
+item1.ADR;type=WORK;type=pref:;;Kitashirakawa-Oiwakecho\nSakyo-ku;;;606-8502;Kyoto
 item1.X-ABADR:sg
-item2.URL;type=pref:tech.gov.sg
+item2.URL;type=pref:www.kurims.kyoto-u.ac.jp/~bcollas/
 item2.X-ABLabel:_$!<HomePage>!$_
 END:VCARD
