@@ -14,7 +14,7 @@ section {
 }
 
 p {
-	margin: 0.30rem !important;
+	margin: 0.25rem !important;
 }
 
 a {
@@ -89,7 +89,7 @@ img.profile-pic {
 }
 
 .col.is-5 {
-	flex: none;
+	flex: auto;
 	width: 50%;
 }
 
@@ -151,7 +151,7 @@ img.profile-pic {
 
 .text-title-company {
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     color: #333333;
     font-size: 15px;
 }
@@ -169,7 +169,7 @@ img.profile-pic {
 
 .button {
 	background-color: #00205b;
-	/* height: 55px; */
+	height: 48px;
 	padding-left: 24px;
 	padding-right: 24px;
 	text-align: center;
