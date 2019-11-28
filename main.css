@@ -1,9 +1,11 @@
 html,
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
+  height: 98%; /*Correct Hack to the top */
+ /* width: 100%;*/
+  margin: 0 auto 0 auto;
   justify-content: center;
+  background-color:white;
+  max-width:450px;
 }
 
 section {
@@ -33,10 +35,12 @@ img {
 }
 
 img.profile-pic {
-	height: 30%;
-	width: 30%;
+	height: 75%;
+	width: 75%;
 	object-fit: cover;
 	border-radius: 50%;
+	border: 1px solid #ddd;
+	padding:5px;
 }
 
 .container {
@@ -54,6 +58,16 @@ img.profile-pic {
 	position: relative;
 	height: 100%;
 	width: 100%;
+}
+
+/* */
+.col.is-8 {
+	padding: 10px 0px 10px 0px;
+}
+
+/* */
+.row.name-title-company IMG{
+	height:70px;
 }
 
 .col {
@@ -88,10 +102,11 @@ img.profile-pic {
 	width: 40%;
 }
 
-.col.is-5 {
+.col.is-5 { /* Picture*/
 	flex: auto;
 	width: 50%;
 }
+
 
 .col.is-6 {
 	flex: none;
@@ -120,18 +135,34 @@ img.profile-pic {
 
 .name-title-company {
 	height: 100%;
+	align-items: flex-end;
 }
 
-.banner {
+.banner { /* Picture Top*/
 	height: 30%;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 20px 20px 20px 20px;
+	margin: 10px; 
 }
 
-.primary-info {
-	height: 15%;
+.primary-info { /* Picture Bottom*/
+	height: 180px;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	margin-top:-90px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px; /* Extra space between Data */
+	padding-bottom: 20px;
+	border-radius: 20px 20px 20px 20px;
+
 }
 
 .secondary-info {
-	height: 8%;
+	height: 6.5%; /* 8*/
 }
 
 .bg-color-grey {
@@ -163,7 +194,7 @@ img.profile-pic {
     font-size: 15px;
 }
 
-.bottom {
+.bottom { 
 	height: 23%;
 }
 
@@ -176,20 +207,36 @@ img.profile-pic {
 	vertical-align: middle;
 	line-height: 48px;
 	font-family: 'Muli', sans-serif;
+	font-size: 100%;
 	color: white;
 	font-weight: 300;
+	border-radius: 20px 20px 20px 20px;
 }
 
 @media screen and (max-width: 600px) {
   img.profile-pic {
-    height: 60%;
-    width: 60%;
+    height: 80%;
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 480px) {
   img.profile-pic {
-    height: 80%;
-    width: 80%;
+    height: 75%;
+    width: 75%;
+  }
+}
+
+/* Orientation Lock CSS trick*/
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height:100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
